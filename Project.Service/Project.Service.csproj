@@ -48,11 +48,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\DBContext\IVehicleMakeDBContext.cs" />
+    <Compile Include="Interfaces\Models\IVehicleMake.cs" />
+    <Compile Include="Interfaces\Models\IVehicleModel.cs" />
+    <Compile Include="Interfaces\DBContext\IVehicleModelDBContext.cs" />
+    <Compile Include="Interfaces\Repository\IVehicleModelRepository.cs" />
+    <Compile Include="Interfaces\Repository\IVehicleMakeRepository.cs" />
     <Compile Include="Models\VehicleMake.cs" />
     <Compile Include="Models\VehicleModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VehicleDBContext.cs" />
-    <Compile Include="VehicleRepository.cs" />
+    <Compile Include="DBContext\VehicleMakeDBContext.cs" />
+    <Compile Include="Repository\VehicleModelRepository.cs" />
+    <Compile Include="DBContext\VehicleModelDBContext.cs" />
+    <Compile Include="Repository\VehicleMakeRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

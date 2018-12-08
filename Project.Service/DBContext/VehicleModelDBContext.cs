@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using Project.Service.Models;
+using Project.Service.Interfaces.DBContext;
 
-namespace Project.Service
+namespace Project.Service.DBContext
 {
-    public class VehicleDBContext : DbContext
+    public class VehicleModelDBContext : DbContext, IVehicleModelDBContext
     {
-        public DbSet<VehicleMake> VehicleMakes { get; set; }
         public DbSet<VehicleModel> VehicleModels { get; set; }
     }
 }

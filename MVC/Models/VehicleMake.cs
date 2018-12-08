@@ -1,13 +1,11 @@
-﻿using Project.Service.Interfaces.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace Project.Service.Models
+namespace MVC.Models
 {
-    public class VehicleMake : IVehicleMake
+    public class VehicleMake
     {
         public int Id { get; set; }
         public string Name { get; set; }
