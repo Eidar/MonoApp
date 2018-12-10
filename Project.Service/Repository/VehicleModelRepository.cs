@@ -1,4 +1,5 @@
-﻿using Project.Service.Interfaces.Repository;
+﻿using Project.Service.DBContext;
+using Project.Service.Interfaces.Repository;
 using Project.Service.Models;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,7 @@ namespace Project.Service.Repository
     {
         List<VehicleModel> IVehicleModelRepository.GetVehicleModels()
         {
-            VehicleModelDBContext vehicleDBContext = new VehicleModelDBContext();
+            VehicleDBContext vehicleDBContext = new VehicleDBContext();
             return vehicleDBContext.VehicleModels.ToList();
         }
     }

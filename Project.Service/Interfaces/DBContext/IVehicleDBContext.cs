@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 
 namespace Project.Service.Interfaces.DBContext
 {
-    interface IVehicleMakeDBContext
+    interface IVehicleDBContext
     {
         DbSet<VehicleMake> VehicleMakes { get; set; }
+        DbSet<VehicleModel> VehicleModels { get; set; }
     }
 }

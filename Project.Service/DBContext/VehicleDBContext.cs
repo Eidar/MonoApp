@@ -9,8 +9,9 @@ using Project.Service.Interfaces.DBContext;
 
 namespace Project.Service.DBContext
 {
-    public class VehicleModelDBContext : DbContext, IVehicleModelDBContext
+    public class VehicleDBContext : DbContext, IVehicleDBContext
     {
+        public DbSet<VehicleMake> VehicleMakes { get; set; }
         public DbSet<VehicleModel> VehicleModels { get; set; }
     }
 }
