@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MonoApp.DAL.Models
+namespace MonoApp.DAL
 {
     public class VehicleModel : IVehicleModel
     {

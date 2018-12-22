@@ -1,11 +1,11 @@
-﻿using MonoApp.Model.Common.DAL;
+﻿using MonoApp.Model.Common.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MonoApp.DAL.Models
+namespace MonoApp.Model
 {
     public class VehicleModel : IVehicleModel
     {

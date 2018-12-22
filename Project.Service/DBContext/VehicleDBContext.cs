@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
-using Project.Service.Models;
-using Project.Service.Interfaces.DBContext;
+using MonoApp.DAL.Models;
+using MonoApp.DAL.Interface;
 
-namespace Project.Service.DBContext
+namespace MonoApp.DAL.DBContext
 {
-    public class VehicleDBContext : DbContext, IVehicleDBContext
-    {
+    public class VehicleDBContext : DbContext, IDbContext
+    { 
         public DbSet<VehicleMake> VehicleMakes { get; set; }
         public DbSet<VehicleModel> VehicleModels { get; set; }
     }
